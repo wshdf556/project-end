@@ -169,7 +169,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Username </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="tch_user" placeholder="Username" value="<?php echo set_value('box_cd'); ?>" class="width-100" />
+																		<input type="text" name="tch_user" placeholder="Username" value="<?php echo set_value('box_cd'); ?>" class="width-100" required/>
 																	</span>
 																</div>
 											</div>
@@ -179,7 +179,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Password </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="password" name="tch_pass" placeholder="Password" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="password" name="tch_pass" placeholder="Password" value="<?php echo set_value('box_name'); ?>" class="width-100" required/>
 																		
 																	</span>
 																</div>
@@ -190,7 +190,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Teacher Name </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="tch_name" placeholder="Teacher Name" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="tch_name" placeholder="Teacher Name" value="<?php echo set_value('box_name'); ?>" class="width-100" required/>
 																		
 																	</span>
 																</div>
@@ -201,7 +201,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Phonnumber </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="tch_tel" placeholder="Phonnumber" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="tch_tel" placeholder="Phonnumber" value="<?php echo set_value('box_name'); ?>" class="width-100" required/>
 																		
 																	</span>
 																</div>
@@ -212,7 +212,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Teacher Code </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="tch_code" placeholder="Teacher Code" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="tch_code" placeholder="Teacher Code" value="<?php echo set_value('box_name'); ?>" class="width-100" required/>
 																		
 																	</span>
 																</div>

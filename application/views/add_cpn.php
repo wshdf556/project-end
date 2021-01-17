@@ -159,17 +159,16 @@
 								<div class="jarviswidget" id="wid-id-4" data-widget-editbutton="false" data-widget-custombutton="false">
                                     
                                     <form action="<?php echo base_url()?>company/registercpn" method="post" class='form-horizontal'>
-										
 									<div class="row">
 									<div class="col-xs-12">
 										
 											<h3 class="lighter block green">ENTER YOUR INFORMATION</h3><br>
-
+													
 											<div class="form-group">
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Username </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="cpn_user" placeholder="Username" value="<?php echo set_value('box_cd'); ?>" class="width-100" />
+																		<input type="text" name="cpn_user" placeholder="Username" value="<?php echo set_value('box_cd'); ?>" class="width-100" required/>
 																	</span>
 																</div>
 											</div>
@@ -179,7 +178,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Password </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="password" name="cpn_pass" placeholder="Password" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="password" name="cpn_pass" placeholder="Password" value="<?php echo set_value('box_name'); ?>" class="width-100"required/>
 																		
 																	</span>
 																</div>
@@ -190,7 +189,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Company Name </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="cpn_name" placeholder="Company Name" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="cpn_name" placeholder="Company Name" value="<?php echo set_value('box_name'); ?>" class="width-100"required/>
 																		
 																	</span>
 																</div>
@@ -201,7 +200,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Company Address </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="cpn_address" placeholder="Company Address" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="cpn_address" placeholder="Company Address" value="<?php echo set_value('box_name'); ?>" class="width-100"required/>
 																		
 																	</span>
 																</div>
@@ -212,7 +211,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Company Email </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="cpn_email" placeholder="Company Email" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="cpn_email" placeholder="Company Email" value="<?php echo set_value('box_name'); ?>" class="width-100"required/>
 																		
 																	</span>
 																</div>
@@ -223,7 +222,7 @@
 												<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Company Phonnumber </label>
 														<div class="col-xs-10 col-sm-6">
 																	<span class="block input-icon input-icon-right">
-																		<input type="text" name="cpn_phnumber" placeholder="Company Phonnumber" value="<?php echo set_value('box_name'); ?>" class="width-100" />
+																		<input type="text" name="cpn_phnumber" placeholder="Company Phonnumber" value="<?php echo set_value('box_name'); ?>" class="width-100"required/>
 																		
 																	</span>
 																</div>
@@ -345,8 +344,6 @@
 											</div>
 										</div>
 									<?php echo form_close();?>
-
-
 								</div>
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->

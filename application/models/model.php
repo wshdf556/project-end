@@ -4,6 +4,40 @@
 class Model extends CI_Model
 {
 
+  public function chk_sessioncpn() {  
+    if($this->session->userdata('cpn_id')=="") {
+      echo "<script>alert('Please Login')</script>";
+      redirect('login','refresh');
+      return FALSE;
+
+    }else{    return TRUE;    }
+}
+
+  public function chk_sessiontch() {  
+    if($this->session->userdata('tch_id')=="") {
+      echo "<script>alert('Please Login')</script>";
+      redirect('login','refresh');
+      return FALSE;
+
+    }else{    return TRUE;    }
+}
+
+public function chk_username_registercpn($username) {  
+       
+  $sql ="SELECT * FROM user WHERE user_name='$username'";
+ $query = $this->db->query($sql);
+ if($query->num_rows()!=0) {
+  echo '<script language="javascript">';
+            echo 'alert("Username alrady exist.");';
+            echo 'history.go(-1);';
+            echo '</script>';
+            exit();
+     }
+   else{       
+   return false;
+     }
+}
+
 public function chk_login($username,$userpass) {  
        
        $sql ="SELECT * FROM user WHERE user_name='$username' and user_pass='$userpass'";

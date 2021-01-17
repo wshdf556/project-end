@@ -60,10 +60,10 @@
 														</button>
 
 														<div>
-															<u><a href="company">Register Company</a></u>
+															<u><a href="company/registerindex">Register Company</a></u>
 														</div>
 														<div>
-															<u><a href="teacher">Register Teacher</a></u>
+															<u><a href="teacher/registerindex">Register Teacher</a></u>
 														</div>
 
 														<input type="hidden" name="action" value="<?php echo base64_encode('login');?>"/>
